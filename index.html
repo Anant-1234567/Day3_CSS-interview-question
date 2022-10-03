@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>Day3 css Interview Question & Answer</title>
+    <style>
+    .btn {
+    width:200px;
+    height: 50px;
+    font-size:large;
+    background-color:rgb(34, 181, 230); 
+    color: white;
+    border: 1px solid white;
+    padding:5px ;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .box {
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .test {
+        width:100px;
+        height:100px;
+        background-color: blueviolet;
+        border:1px solid red;
+        transition: width 3s;
+    }
+    .test:hover {
+        width:300px;
+    }
+    .circle {
+        width: 200px;
+        height:200px;
+        background-color: aqua;
+        border:2px solid red;
+        border-radius: 50%;
+    }
+    * {
+        box-sizing:border-box;
+    }
+    .responsive {
+        overflow: hidden;
+        background-color:black;
+    }
+    .responsive a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .responsive a {
+      float: none;
+      width: 100%;
+      }
+    }
+    .animation {
+       width: 100px;
+       height: 100px;
+       background-color: red;
+       animation-name: anant;
+       animation-duration: 3s;
+    }
+
+    @keyframes anant {
+       from {background-color: red;}
+       to {background-color: green;}
+    }
+    </style>
+</head>
+<body>
+    <h1>Day3 css Interview Question & Answer</h1>
+    1)Replicate the button on Masthead of PrepBytes?<br><br>
+    Ans:- <a href="https://prepbytes.com"><button class="btn">Prepbytes</button></a>
+    <br><br>
+    2)Write a text and add any google font ?<br><br>
+    Ans:-<div class="box">
+           <h1>baloo bhai font</h1>
+           Ram is a Good Boy
+        <div>
+    <br><br>
+    3)create a box and increase its width on hover , add transition on hover?<br><br>
+    Ans:- <div class="test"></div>
+    <br><br>
+    4)Create a circle using border radius ?<br><br>
+    Ans:- If we give equal height and width to a box and give 50% to its border-radius. Then we can achieve a circle.<br><br>
+          <div class="circle"></div>
+    5)Write code to show implementation of media queries?<br><br>
+    Ans:- Media queries is CSS property to add responsiveness to the webpage so that it can be displayed on the screen smoothly.<br><br>
+          <div class="responsive">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <br><br>
+    6)Write code to show any animation example?<br><br>
+    Ans:-By using animation property we can add some cool transitions and animations to the element. To use animation, you must define keyframes for the animation. Below example will change the box color in every 0.25seconds starting from red till green.<br><br>
+
+    <h1>CSS Animation</h1>
+
+    <div class="animation">
+
+    </div>
+
+    
+</body>
+</html>
